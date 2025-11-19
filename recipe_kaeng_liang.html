@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <title>สูตรแกงเลียงกุ้งสด</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="healthy_bites.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-dark" href="index.html">
+                <i class="fas fa-leaf text-success me-2"></i> HEALTHY BITES
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">หน้าแรก</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="recipes_all_page1.html">เมนูสุขภาพ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bmi_calculate.html">คำนวณ BMI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact_us.html">ติดต่อเรา</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="recipeHero" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=1950&q=80" class="d-block w-100 hero-img" alt="Spicy Vegetable Soup with Shrimp">
+                <div class="carousel-caption">
+                    <div class="hero-text-box px-5">
+                        <h1 class="fw-bold">แกงเลียงกุ้งสด</h1>
+                        <h2 class="text-center">Spicy Vegetable Soup with Shrimp</h2>
+                        <span class="badge mt-3 fs-6">เมนูสมุนไพรฤทธิ์ร้อน ผักพื้นบ้านใยอาหารสูง ไขมันต่ำ ช่วยระบบขับถ่ายและให้ความสดชื่น</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </section>
+
+    <section class="container my-5 bg-light p-4 rounded-3">
+        <div class="row g-5">
+            
+            <div class="col-md-6">
+                <h3 class="fw-bold mb-3">ส่วนผสมหลัก</h3>
+                <div class="table-responsive">
+                    <table class="table table-striped table-borderless ingredient-table">
+                        <thead class="table-secondary">
+                            <tr>
+                                <th scope="col">วัตถุดิบ</th>
+                                <th scope="col" class="text-end">ปริมาณโดยประมาณ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>กุ้งสด (ปอกเปลือก ผ่าหลัง)</td><td class="text-end">8 - 10 ตัว (100 กรัม)</td></tr>
+                            <tr><td>น้ำซุปผัก หรือ น้ำเปล่า</td><td class="text-end">400 - 500 มล.</td></tr>
+                            <tr><td>ผักรวม (ฟักทอง, บวบ, ข้าวโพดอ่อน)</td><td class="text-end">1 ถ้วยตวง</td></tr>
+                            <tr><td>ใบตำลึง</td><td class="text-end">1/2 ถ้วยตวง</td></tr>
+                            <tr><td>ใบแมงลัก</td><td class="text-end">1/2 ถ้วยตวง</td></tr>
+                            <tr><td>น้ำปลา (สูตรลดโซเดียม)</td><td class="text-end">ปรุงรสตามชอบ</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="fw-bold mb-3 mt-4">ส่วนผสมเครื่องแกงเลียง</h3>
+                <div class="table-responsive">
+                    <table class="table table-striped table-borderless ingredient-table">
+                        <thead class="table-secondary">
+                            <tr>
+                                <th scope="col">วัตถุดิบ</th>
+                                <th scope="col" class="text-end">ปริมาณ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>หอมแดง</td><td class="text-end">3 - 4 หัว</td></tr>
+                            <tr><td>พริกไทยดำเม็ด</td><td class="text-end">1/2 ช้อนชา</td></tr>
+                            <tr><td>กุ้งแห้ง (แช่น้ำให้นิ่ม)</td><td class="text-end">1 ช้อนโต๊ะ</td></tr>
+                            <tr><td>กะปิ</td><td class="text-end">1/2 ช้อนชา</td></tr>
+                            <tr><td>พริกขี้หนูสด (ทางเลือก)</td><td class="text-end">1 - 2 เม็ด</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="fw-bold mb-3">วิธีทำ</h3>
+                <div class="mb-4">
+                    <h5 class="fw-bold text-secondary">1. เตรียมเครื่องแกง</h5>
+                    <ol class="instruction-list text-muted">
+                        <li>นำหอมแดง พริกไทยดำเม็ด กุ้งแห้ง และกะปิ ไปโขลกรวมกันในครกให้ละเอียดเข้ากันดี (หากไม่มีครก สามารถใช้เครื่องปั่นปั่นหยาบๆ ได้)</li>
+                    </ol>
+                    
+                    <h5 class="fw-bold text-secondary mt-3">2. ต้มแกง</h5>
+                    <ol class="instruction-list text-muted">
+                        <li>ตั้งหม้อ เทน้ำซุปผักหรือน้ำเปล่าลงไป ต้มให้เดือด</li>
+                        <li>ตักเครื่องแกงที่โขลกไว้ใส่ลงไป คนให้ละลายเข้ากันกับน้ำเดือด</li>
+                    </ol>
+
+                    <h5 class="fw-bold text-secondary mt-3">3. ใส่ผักและกุ้ง</h5>
+                    <ol class="instruction-list text-muted">
+                        <li>ใส่ผักที่สุกยากลงไปก่อน เช่น ฟักทอง และ ข้าวโพดอ่อน ต้มต่อจนฟักทองเริ่มนิ่ม</li>
+                        <li>ใส่ผักที่สุกง่ายตามลงไป เช่น บวบ จากนั้นใส่กุ้งสด ต้มต่อจนกุ้งเริ่มเปลี่ยนเป็นสีส้มและสุกดี</li>
+                    </ol>
+
+                    <h5 class="fw-bold text-secondary mt-3">4. ปรุงรสและเสิร์ฟ</h5>
+                    <ol class="instruction-list text-muted">
+                        <li>ปรุงรสด้วยน้ำปลาลดโซเดียม ชิมรสให้กลมกล่อม (ระวังอย่าให้เค็มเกินไป เพราะกะปิและกุ้งแห้งมีความเค็มอยู่แล้ว)</li>
+                        <li>ใส่ใบตำลึง และปิดท้ายด้วยใบแมงลัก กดให้ใบจมน้ำแกงพอสลด (ยุบตัว) แล้วปิดไฟทันที เพื่อรักษาความหอมของใบแมงลักไว้</li>
+                        <li>ตักใส่ชาม เสิร์ฟร้อนๆ ทานคู่กับข้าวสวยร้อนๆ หรือทานเปล่าๆ ก็อร่อยและสุขภาพดี</li>
+                    </ol>
+                </div>
+
+                <div class="nutrition-box p-3 border rounded bg-white">
+                    <h5 class="fw-bold mb-3 text-center text-secondary">ข้อมูลโภชนาการ <small class="fw-normal">(ต่อ 1 ที่)</small></h5>
+                    <div class="row text-center">
+                        <div class="col-6 border-end">
+                            <p class="mb-0 small text-muted">พลังงานรวม</p>
+                            <h4 class="fw-bold text-dark">180-250</h4>
+                            <p class="mb-0 small text-muted">กิโลแคลอรี</p>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex justify-content-between px-3">
+                                <span class="small text-muted">โปรตีน</span>
+                                <span class="small fw-bold">15 - 20 g</span>
+                            </div>
+                            <div class="d-flex justify-content-between px-3">
+                                <span class="small text-muted">คาร์โบไฮเดรต</span>
+                                <span class="small fw-bold">20 - 25 g</span>
+                            </div>
+                            <div class="d-flex justify-content-between px-3">
+                                <span class="small text-muted">ไขมัน</span>
+                                <span class="small fw-bold">ต่ำมาก</span>
+                            </div>
+                            <div class="d-flex justify-content-between px-3">
+                                <span class="small text-muted">ใยอาหาร</span>
+                                <span class="small fw-bold">สูงมาก</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-2">
+                        <small class="text-success"><i class="fas fa-check-circle"></i> อุดมด้วยวิตามินเอ และ แคลเซียม</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-light py-4 mt-auto">
+        <div class="container text-center">
+            <div class="mb-3">
+                <a href="https://www.facebook.com/?locale=th_TH" class="text-secondary me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="https://x.com/?lang=th" class="text-secondary me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="https://www.youtube.com/" class="text-secondary"><i class="fab fa-youtube fa-lg"></i></a>
+            </div>
+            <p class="text-muted small mb-0">นโยบายความเป็นส่วนตัว &bull; ข้อกำหนดการใช้งาน</p>
+        </div>
+    </footer>
+
+</body>
+</html>

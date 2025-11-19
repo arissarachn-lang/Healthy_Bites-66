@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <title>Recipes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="healthy_bites.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-dark" href="index.html">
+                <i class="fas fa-leaf text-success me-2"></i> HEALTHY BITES
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">หน้าแรก</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="recipes_all_page1.html">เมนูสุขภาพ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bmi_calculate.html">คำนวณ BMI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact_us.html">ติดต่อเรา</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container my-4">
+        <div class="d-flex justify-content-center flex-wrap gap-2 filter-bar">
+            <a href="recipes1.html" class="btn btn-filter active">ทั้งหมด</a>
+            <a href="recipes_food.html" class="btn btn-filter">อาหาร</a>
+            <a href="recipes_drink.html" class="btn btn-filter">เครื่องดื่ม</a>
+            <a href="recipes_dessert.html" class="btn btn-filter">ของหวาน</a>
+        </div>
+    </section>
+
+    <section class="container mb-5">
+        <h3 class="mb-4 fw-bold text-dark">เมนูทั้งหมด</h3>
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card menu-card h-100 border-0 shadow-sm">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Salad">
+                        <span class="badge bg-success position-absolute top-0 end-0 m-2">คลีน</span>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">สลัดอกไก่ย่างกับควินัว</h5>
+                        <p class="text-muted small">380-450 kcal</p>
+                        <a href="Recipe_สลัดอกไก่ย่าง.html" class="btn btn-success rounded-pill btn-sm px-3">ดูสูตร</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card menu-card h-100 border-0 shadow-sm">
+                    <div class="position-relative">
+                        <img src="https://img.wongnai.com/p/1920x0/2018/05/09/9423b561e7f8412a8f4753ef9fb2deea.jpg" class="card-img-top" alt="Smoothie">
+                        <span class="badge bg-success position-absolute top-0 end-0 m-2">คลีน</span>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">ข้าวกล้องหน้าปลาแซลมอนย่างซีอิ๊ว</h5>
+                        <p class="text-muted small">450-500 kcal</p>
+                        <a href="Recipe_GrilledSalmon.html" class="btn btn-success rounded-pill btn-sm px-3">ดูสูตร</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card menu-card h-100 border-0 shadow-sm">
+                    <div class="position-relative">
+                        <img src="https://assets.unileversolutions.com/recipes-v2/242153.jpg" class="card-img-top" alt="Rice">
+                        <span class="badge bg-success position-absolute top-0 end-0 m-2">อาหารเช้า</span>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">ต้มจืดเต้าหู้วุ้นเส้นสาหร่าย</h5>
+                        <p class="text-muted small">150-200 kcal</p>
+                        <a href="Recipe_TofuGlassNoodleSoup.html" class="btn btn-success rounded-pill btn-sm px-3">ดูสูตร</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card menu-card h-100 border-0 shadow-sm">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=1950&q=80" class="card-img-top" alt="Soup">
+                        <span class="badge bg-success position-absolute top-0 end-0 m-2">เผ็ด</span>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">แกงเลียงกุ้งสด</h5>
+                        <p class="text-muted small">180-250 kcal</p>
+                        <a href="Recipe_KaengLiang.html" class="btn btn-success rounded-pill btn-sm px-3">ดูสูตร</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card menu-card h-100 border-0 shadow-sm">
+                    <div class="position-relative">
+                        <img src="https://i.ytimg.com/vi/uqEKqZ9lBQk/maxresdefault.jpg" class="card-img-top" alt="Salad">
+                        <span class="badge bg-success position-absolute top-0 end-0 m-2">ยอดนิยม</span>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">ลาบปลา/ลาบเห็ด</h5>
+                        <p class="text-muted small">200-250 kcal</p>
+                        <a href="Recipe_Larb.html" class="btn btn-success rounded-pill btn-sm px-3">ดูสูตร</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card menu-card h-100 border-0 shadow-sm">
+                    <div class="position-relative">
+                        <img src="https://i.ytimg.com/vi/t07tWsbzqoI/hqdefault.jpg" class="card-img-top" alt="Rice">
+                        <span class="badge bg-success position-absolute top-0 end-0 m-2">คลีน</span>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">ผัดบรอกโคลีใส่เนื้อกุ้ง/เนื้อหมูสันใน</h5>
+                        <p class="text-muted small">200-300 kcal</p>
+                        <a href="Recipe_StirFriedBroccoli.html" class="btn btn-success rounded-pill btn-sm px-3">ดูสูตร</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card menu-card h-100 border-0 shadow-sm">
+                    <div class="position-relative">
+                        <img src="https://img-global.cpcdn.com/recipes/872822ef5cb64cd6/1200x630cq80/photo.jpg" class="card-img-top" alt="Drink">
+                        <span class="badge bg-success position-absolute top-0 end-0 m-2">อาหารเช้า</span>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">โจ๊กข้าวโอ๊ตใส่ไข่</h5>
+                        <p class="text-muted small">250-300 kcal</p>
+                        <a href="Recipe_OatmealCongee.html" class="btn btn-success rounded-pill btn-sm px-3">ดูสูตร</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card menu-card h-100 border-0 shadow-sm">
+                    <div class="position-relative">
+                        <img src="https://www.calforlife.com/image/food/Whole-Wheat-Tuna-Sandwich-.jpg" class="card-img-top" alt="Dessert">
+                        <span class="badge bg-success position-absolute top-0 end-0 m-2">อาหารเช้า</span>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">แซนด์วิชโฮลวีททูน่าในน้ำแร่</h5>
+                        <p class="text-muted small">300-350 kcal</p>
+                        <a href="Recipe_TunaSandwich.html" class="btn btn-success rounded-pill btn-sm px-3">ดูสูตร</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="mt-5 d-flex justify-content-center">
+            <ul class="pagination">
+                <li class="page-item disabled">
+                    <a class="page-link border-0 bg-transparent" href="#">Previous</a>
+                </li>
+                <li class="page-item active"><a class="page-link border-0 rounded-circle bg-success" href="#">1</a></li>
+                <li class="page-item"><a class="page-link border-0 bg-transparent text-muted" href="recipes_all_page2.html">2</a></li>
+                <li class="page-item">
+                    <a class="page-link border-0 bg-transparent text-muted" href="recipes_all_page2.html">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <footer class="bg-light py-4 mt-auto">
+        <div class="container text-center">
+            <div class="mb-3">
+                <a href="https://www.facebook.com/?locale=th_TH" class="text-secondary me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="https://x.com/?lang=th" class="text-secondary me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="https://www.youtube.com/" class="text-secondary"><i class="fab fa-youtube fa-lg"></i></a>
+            </div>
+            <p class="text-muted small mb-0">นโยบายความเป็นส่วนตัว &bull; ข้อกำหนดการใช้งาน</p>
+        </div>
+    </footer>
+
+</body>
+</html>

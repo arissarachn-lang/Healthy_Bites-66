@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <title>BMI Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="healthy_bites.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-dark" href="index.html">
+                <i class="fas fa-leaf text-success me-2"></i> HEALTHY BITES
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">หน้าแรก</a></li>
+                    <li class="nav-item"><a class="nav-link" href="recipes_all_page1.html">เมนูสุขภาพ</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="bmi_calculate.html">คำนวณ BMI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact_us.html">ติดต่อเรา</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container my-5 py-4">
+        <div class="text-center mb-5">
+            <h1 class="fw-bold display-5">เครื่องคำนวณ BMI</h1>
+            <p class="text-muted">ตรวจสอบค่าดัชนีมวลกายเพื่อสุขภาพที่ดีของคุณ</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card border-0 bg-light rounded-4 p-4 shadow-sm calculator-box">
+                    <form id="bmiForm" onsubmit="calculateBMI(event)">
+                        <div class="mb-4">
+                            <label for="weight" class="form-label fw-bold text-secondary">น้ำหนัก (กิโลกรัม)</label>
+                            <input type="number" class="form-control form-control-lg border-0" id="weight" placeholder="ระบุน้ำหนัก" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="height" class="form-label fw-bold text-secondary">ส่วนสูง (เซนติเมตร)</label>
+                            <input type="number" class="form-control form-control-lg border-0" id="height" placeholder="ระบุส่วนสูง" required>
+                        </div>
+                        <div class="d-grid mt-5">
+                            <button type="submit" class="btn btn-success btn-lg rounded-pill">คำนวณ</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="resultModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0 p-3">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold mx-auto fs-4">ผลลัพธ์ BMI</h5>
+                    <button type="button" class="btn-close position-absolute end-0 me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <h3 class="fw-bold mb-3 text-dark">BMI ของคุณคือ: <span id="bmiValue" class="text-success"></span></h3>
+                    <p class="fs-5 text-muted">คุณอยู่ในเกณฑ์: <span id="bmiStatus" class="fw-bold"></span></p>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button type="button" class="btn btn-success rounded-pill px-5" data-bs-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light py-4 mt-auto fixed-bottom-md">
+        <div class="container text-center">
+            <div class="mb-3">
+                <a href="https://www.facebook.com/?locale=th_TH" class="text-secondary me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="https://x.com/?lang=th" class="text-secondary me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="https://www.youtube.com/" class="text-secondary"><i class="fab fa-youtube fa-lg"></i></a>
+            </div>
+            <p class="text-muted small mb-0">นโยบายความเป็นส่วนตัว &bull; ข้อกำหนดการใช้งาน</p>
+        </div>
+    </footer>
+
+    <script>
+        function calculateBMI(event) {
+            event.preventDefault(); // ป้องกันหน้าเว็บรีเฟรช
+
+            // รับค่าจากฟอร์ม
+            let weight = parseFloat(document.getElementById('weight').value);
+            let height = parseFloat(document.getElementById('height').value);
+
+            // ตรวจสอบว่ามีการกรอกข้อมูลครบหรือไม่
+            if (weight > 0 && height > 0) {
+                // สูตรคำนวณ: น้ำหนัก (kg) / (ส่วนสูง (m) ^ 2)
+                let heightInMeters = height / 100;
+                let bmi = weight / (heightInMeters * heightInMeters);
+                bmi = bmi.toFixed(1); // ทศนิยม 1 ตำแหน่ง
+
+                // แปลผลเกณฑ์ BMI
+                let status = "";
+                if (bmi < 18.5) status = "น้ำหนักน้อย / ผอม";
+                else if (bmi < 23) status = "สมส่วน (ปกติ)";
+                else if (bmi < 25) status = "น้ำหนักเกิน (ท้วม)";
+                else if (bmi < 30) status = "อ้วนระดับ 1";
+                else status = "อ้วนระดับ 2";
+
+                // แสดงผลใน Modal
+                document.getElementById('bmiValue').innerText = bmi;
+                document.getElementById('bmiStatus').innerText = status;
+
+                // สั่งให้ Modal เด้งขึ้นมา
+                var myModal = new bootstrap.Modal(document.getElementById('resultModal'));
+                myModal.show();
+            } else {
+                alert("กรุณากรอกข้อมูลให้ถูกต้อง");
+            }
+        }
+    </script>
+
+</body>
+</html>

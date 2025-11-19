@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <title>สูตรผัดบรอกโคลีใส่เนื้อกุ้ง</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="healthy_bites.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-dark" href="index.html">
+                <i class="fas fa-leaf text-success me-2"></i> HEALTHY BITES
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">หน้าแรก</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="recipes_all_page1.html">เมนูสุขภาพ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bmi_calculate.html">คำนวณ BMI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact_us.html">ติดต่อเรา</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="recipeHero" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://i.ytimg.com/vi/t07tWsbzqoI/hqdefault.jpg" class="d-block w-100 hero-img" alt="Stir-fried Broccoli with Shrimp">
+                <div class="carousel-caption">
+                    <div class="hero-text-box px-5">
+                        <h1 class="fw-bold">ผัดบรอกโคลีใส่เนื้อกุ้ง</h1>
+                        <h2 class="text-center">Stir-fried Broccoli with Shrimp</h2>
+                        <span class="badge mt-3 fs-6">แหล่งวิตามิน C และ K สูง โปรตีนลีนจากเนื้อสัตว์ ผัดน้ำมันน้อยเพื่อสุขภาพ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </section>
+
+    <section class="container my-5 bg-light p-4 rounded-3">
+        <div class="row g-5">
+            
+            <div class="col-md-6">
+                <h3 class="fw-bold mb-3">ส่วนผสมหลัก</h3>
+                <div class="table-responsive">
+                    <table class="table table-striped table-borderless ingredient-table">
+                        <thead class="table-secondary">
+                            <tr>
+                                <th scope="col">วัตถุดิบ</th>
+                                <th scope="col" class="text-end">ปริมาณโดยประมาณ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>บรอกโคลี (หั่นชิ้น)</td><td class="text-end">150 - 200 กรัม</td></tr>
+                            <tr><td>เนื้อกุ้ง หรือ หมูสันใน (หั่นชิ้น)</td><td class="text-end">100 - 150 กรัม</td></tr>
+                            <tr><td>กระเทียม (สับละเอียด)</td><td class="text-end">1 ช้อนโต๊ะ</td></tr>
+                            <tr><td>แครอท (หั่นชิ้น)</td><td class="text-end">30 กรัม</td></tr>
+                            <tr><td>น้ำมันมะกอก หรือ รำข้าว</td><td class="text-end">1 - 2 ช้อนชา</td></tr>
+                            <tr><td>น้ำเปล่า หรือ น้ำซุปผัก</td><td class="text-end">2 - 3 ช้อนโต๊ะ</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="fw-bold mb-3 mt-4">ส่วนผสมปรุงรส (สูตรลดเค็ม)</h3>
+                <div class="table-responsive">
+                    <table class="table table-striped table-borderless ingredient-table">
+                        <thead class="table-secondary">
+                            <tr>
+                                <th scope="col">วัตถุดิบ</th>
+                                <th scope="col" class="text-end">ปริมาณ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>ซีอิ๊วขาว (สูตรลดโซเดียม)</td><td class="text-end">1 ช้อนโต๊ะ</td></tr>
+                            <tr><td>น้ำมันหอย (สูตรลดโซเดียม)</td><td class="text-end">1/2 ช้อนชา (ทางเลือก)</td></tr>
+                            <tr><td>น้ำตาลหญ้าหวาน</td><td class="text-end">1/2 ช้อนชา (ทางเลือก)</td></tr>
+                            <tr><td>พริกไทยขาวป่น</td><td class="text-end">เล็กน้อย</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="fw-bold mb-3">วิธีทำ</h3>
+                <div class="mb-4">
+                    <h5 class="fw-bold text-secondary">1. เตรียมวัตถุดิบ</h5>
+                    <ol class="instruction-list text-muted">
+                        <li>นำบรอกโคลีไปลวกในน้ำเดือดใส่เกลือเล็กน้อยประมาณ 1 นาที แล้วน็อกน้ำเย็นทันทีเพื่อรักษาสีและความกรอบ พักไว้</li>
+                        <li>หั่นเนื้อหมูสันในหรือเตรียมกุ้งให้พร้อม</li>
+                    </ol>
+                    
+                    <h5 class="fw-bold text-secondary mt-3">2. ผัดเครื่องและเนื้อสัตว์</h5>
+                    <ol class="instruction-list text-muted">
+                        <li>ตั้งกระทะไฟกลาง ใส่น้ำมันมะกอกเพียงเล็กน้อย (1-2 ช้อนชา)</li>
+                        <li>ใส่กระเทียมสับลงผัดจนหอม ระวังอย่าให้ไหม้</li>
+                        <li>ใส่เนื้อสัตว์ลงผัดจนเกือบสุก</li>
+                    </ol>
+
+                    <h5 class="fw-bold text-secondary mt-3">3. ปรุงรสและผัดผัก</h5>
+                    <ol class="instruction-list text-muted">
+                        <li>ใส่บรอกโคลีที่ลวกไว้และแครอทลงไป</li>
+                        <li>ปรุงรสด้วยซีอิ๊วขาว น้ำมันหอย และน้ำตาลหญ้าหวาน</li>
+                        <li>เติมน้ำเปล่าหรือน้ำซุปเล็กน้อย เพื่อให้เกิดไอน้ำช่วยให้ผักสุกทั่วถึงโดยไม่ต้องใช้น้ำมันเยอะ</li>
+                        <li>เร่งไฟแรงแล้วผัดเร็วๆ ให้เข้ากัน โรยพริกไทยป่น ปิดไฟ</li>
+                    </ol>
+
+                    <h5 class="fw-bold text-secondary mt-3">4. จัดเสิร์ฟ</h5>
+                    <ol class="instruction-list text-muted">
+                        <li>ตักใส่จาน เสิร์ฟร้อนๆ ทานคู่กับข้าวกล้องหรือข้าวสวยร้อนๆ</li>
+                    </ol>
+                </div>
+
+                <div class="nutrition-box p-3 border rounded bg-white">
+                    <h5 class="fw-bold mb-3 text-center text-secondary">ข้อมูลโภชนาการ <small class="fw-normal">(ต่อ 1 ที่)</small></h5>
+                    <div class="row text-center">
+                        <div class="col-6 border-end">
+                            <p class="mb-0 small text-muted">พลังงานรวม</p>
+                            <h4 class="fw-bold text-dark">200-300</h4>
+                            <p class="mb-0 small text-muted">กิโลแคลอรี</p>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex justify-content-between px-3">
+                                <span class="small text-muted">โปรตีน</span>
+                                <span class="small fw-bold">20 - 30 g</span>
+                            </div>
+                            <div class="d-flex justify-content-between px-3">
+                                <span class="small text-muted">คาร์โบไฮเดรต</span>
+                                <span class="small fw-bold">10 - 15 g</span>
+                            </div>
+                            <div class="d-flex justify-content-between px-3">
+                                <span class="small text-muted">ไขมัน</span>
+                                <span class="small fw-bold">8 - 12 g</span>
+                            </div>
+                            <div class="d-flex justify-content-between px-3">
+                                <span class="small text-muted">วิตามิน</span>
+                                <span class="small fw-bold">C, K สูง</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-light py-4 mt-auto">
+        <div class="container text-center">
+            <div class="mb-3">
+                <a href="https://www.facebook.com/?locale=th_TH" class="text-secondary me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="https://x.com/?lang=th" class="text-secondary me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="https://www.youtube.com/" class="text-secondary"><i class="fab fa-youtube fa-lg"></i></a>
+            </div>
+            <p class="text-muted small mb-0">นโยบายความเป็นส่วนตัว &bull; ข้อกำหนดการใช้งาน</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <title>สูตรสลัดอกไก่ย่าง</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="healthy_bites.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-dark" href="index.html">
+                <i class="fas fa-leaf text-success me-2"></i> HEALTHY BITES
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">หน้าแรก</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="recipes_all_page1.html">เมนูสุขภาพ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bmi_calculate.html">คำนวณ BMI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact_us.html">ติดต่อเรา</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="recipeHero" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1950&q=80" class="d-block w-100 hero-img" alt="Grilled Chicken Salad">
+                <div class="carousel-caption">
+                    <div class="hero-text-box px-5">
+                        <h1 class="fw-bold">สลัดอกไก่ย่างกับควินัว</h1>
+                        <h2 class="text-center">Grilled Chicken & Quinoa Salad</h2>
+                        <span class="badge mt-3 fs-6">เน้นโปรตีนลีนจากอกไก่ ควินัวเป็นแหล่งใยอาหารและโปรตีนสมบูรณ์ ราดด้วยน้ำสลัดบัลซามิก/น้ำมันมะกอก</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </section>
+
+    <section class="container my-5 bg-light p-4 rounded-3">
+        <div class="row g-5">
+            
+            <div class="col-md-6">
+                <h3 class="fw-bold mb-3">ส่วนผสม</h3>
+                <div class="table-responsive">
+                    <table class="table table-striped table-borderless ingredient-table">
+                        <thead class="table-secondary">
+                            <tr>
+                                <th scope="col">วัตถุดิบ</th>
+                                <th scope="col" class="text-end">ปริมาณ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>อกไก่ลอกหนัง</td><td class="text-end">180 - 200 กรัม</td></tr>
+                            <tr><td>ควินัว (Quinoa)</td><td class="text-end">50 กรัม (ดิบ) \ 150 กรัม (หุงสุก)</td></tr>
+                            <tr><td>ผักสลัดรวม</td><td class="text-end">200 กรัม</td></tr>
+                            <tr><td>มะเขือเทศเชอร์รี่</td><td class="text-end">5 - 8 ลูก</td></tr>
+                            <tr><td>แตงกวาญี่ปุ่น</td><td class="text-end">1/2 ลูก</td></tr>
+                            <tr><td>น้ำมันมะกอก (สำหรับหมักและย่าง)</td><td class="text-end">1 ช้อนชา</td></tr>
+                            <tr><td>พริกไทยดำ</td><td class="text-end">1/2 ช้อนชา</td></tr>
+                            <tr><td>เกลือ/ผงกระเทียม</td><td class="text-end">เล็กน้อย</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="fw-bold mb-3">ส่วนผสมน้ำสลัดบัลซามิก</h3>
+                <div class="table-responsive">
+                    <table class="table table-striped table-borderless ingredient-table">
+                        <thead class="table-secondary">
+                            <tr>
+                                <th scope="col">วัตถุดิบ</th>
+                                <th scope="col" class="text-end">ปริมาณ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>น้ำมันมะกอก Extra Virgin</td><td class="text-end">1 ช้อนโต๊ะ</td></tr>
+                            <tr><td>น้ำส้มสายชูบัลซามิก</td><td class="text-end">1 ช้อนโต๊ะ</td></tr>
+                            <tr><td>น้ำผึ้ง/หญ้าหวาน</td><td class="text-end">1/2 ช้อนชา (หรือไม่ใส่เลย)</td></tr>
+                            <tr><td>มัสตาร์ด Dijon (ทางเลือก)</td><td class="text-end">1/2 ช้อนชา</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="fw-bold mb-3">วิธีทำ</h3>
+                <div class="mb-4">
+                    <h5 class="fw-bold text-secondary">เตรียมควินัว</h5>
+                    <ol class="instruction-list text-muted">
+                        <li>นำควินัวดิบ 50 กรัม ไปล้างน้ำให้สะอาด (สำคัญมากเพื่อลดความขม)</li>
+                        <li>นำไปหุงในอัตราส่วน ควินัว 1 ส่วน : น้ำ 2 ส่วน (หรือตามคำแนะนำบนบรรจุภัณฑ์) ประมาณ 15-20 นาที จนสุกนิ่ม พักไว้ให้เย็น</li>
+                    </ol>
+                    
+                    <h5 class="fw-bold text-secondary mt-3">เตรียมอกไก่ย่าง</h5>
+                    <ol class="instruction-list text-muted">
+                        <li>หั่นอกไก่เป็นชิ้นหนาพอประมาณ (ประมาณ 1 นิ้ว)</li>
+                        <li>หมักไก่ด้วยน้ำมันมะกอกเล็กน้อย, พริกไทยดำ, เกลือ/ผงกระเทียม ทิ้งไว้ 15 นาที</li>
+                        <li>นำอกไก่ไปย่างบนกระทะเทฟลอน หรือเตาอบ จนสุกเหลืองทองทั้งสองด้าน จากนั้นนำมาหั่นเป็นชิ้นพอดีคำ</li>
+                    </ol>
+
+                    <h5 class="fw-bold text-secondary mt-3">เตรียมผักและน้ำสลัด</h5>
+                    <ol class="instruction-list text-muted">
+                        <li>ล้างผักทุกชนิดให้สะอาด พักให้สะเด็ดน้ำ</li>
+                        <li>ผสมส่วนผสมน้ำสลัดบัลซามิกทั้งหมดเข้าด้วยกันในถ้วยเล็กๆ ชิมรสตามชอบ</li>
+                    </ol>
+
+                    <h5 class="fw-bold text-secondary mt-3">จัดจาน</h5>
+                    <ol class="instruction-list text-muted">
+                        <li>นำผักสลัดและผักอื่นๆ จัดวางในจาน</li>
+                        <li>วางควินัวหุงสุกและชิ้นอกไก่ย่างที่หั่นไว้ลงบนสลัด</li>
+                        <li>ราดด้วยน้ำสลัดบัลซามิกที่เตรียมไว้ พร้อมเสิร์ฟทันที</li>
+                    </ol>
+                </div>
+
+                <div class="nutrition-box p-3 border rounded bg-white">
+                    <h5 class="fw-bold mb-3 text-center text-secondary">ข้อมูลโภชนาการ <small class="fw-normal">(ต่อ 1 จาน)</small></h5>
+                    <div class="row text-center">
+                        <div class="col-6 border-end">
+                            <p class="mb-0 small text-muted">พลังงาน</p>
+                            <h4 class="fw-bold text-dark">380-450</h4>
+                            <p class="mb-0 small text-muted">กิโลแคลอรี่</p>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex justify-content-between px-3">
+                                <span class="small text-muted">โปรตีน</span>
+                                <span class="small fw-bold">40 - 45g</span>
+                            </div>
+                            <div class="d-flex justify-content-between px-3">
+                                <span class="small text-muted">คาร์บ</span>
+                                <span class="small fw-bold">30 - 35g</span>
+                            </div>
+                            <div class="d-flex justify-content-between px-3">
+                                <span class="small text-muted">ไขมัน</span>
+                                <span class="small fw-bold">12 - 15g</span>
+                            </div>
+                            <div class="d-flex justify-content-between px-3">
+                                <span class="small text-muted">ใยอาหาร</span>
+                                <span class="small fw-bold">สูง</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-light py-4 mt-auto">
+        <div class="container text-center">
+            <div class="mb-3">
+                <a href="https://www.facebook.com/?locale=th_TH" class="text-secondary me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="https://x.com/?lang=th" class="text-secondary me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="https://www.youtube.com/" class="text-secondary"><i class="fab fa-youtube fa-lg"></i></a>
+            </div>
+            <p class="text-muted small mb-0">นโยบายความเป็นส่วนตัว &bull; ข้อกำหนดการใช้งาน</p>
+        </div>
+    </footer>
+
+</body>
+</html>
